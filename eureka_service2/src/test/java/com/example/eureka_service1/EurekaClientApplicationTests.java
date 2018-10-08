@@ -1,4 +1,4 @@
-package com.example.eureka_client;
+package com.example.eureka_service1;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
