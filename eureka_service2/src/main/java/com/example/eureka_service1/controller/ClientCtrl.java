@@ -29,7 +29,7 @@ public class ClientCtrl {
     }
 
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
     public Integer add(@RequestParam Integer a, @RequestParam Integer b) {
         //List<String> services = client.getServices();
         //for (String service : services) {
@@ -41,7 +41,7 @@ public class ClientCtrl {
         //}
         ServiceInstance service = balancerClient.choose("service");
         Integer r = a + b;
-        logger.info("/add, host:" + service.getHost() + ", service_id:" + service.getServiceId() + ", result:" + r);
+        logger.info("/add, host:" + service.getHost() + ", service_uri:" + service.getUri() + ", service_id:" + service.getServiceId() + ", result:" + r);
         return r;
     }
 }
