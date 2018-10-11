@@ -1,0 +1,21 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: service_zuul
+
+zuul:
+  routes:
+    ribbon:
+      path: /ribbon/**
+      serviceId: ribbon-client
+    feign:
+      path: /feign/**
+      serviceId: feign-client
+
