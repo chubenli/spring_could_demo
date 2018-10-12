@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+
+server:
+  port: 7001
+
+# gitπ‹¿Ì≈‰÷√
+cloud:
+  config:
+    server:
+      git:
+        uri: https://github.com/chubenli/spring_could_demo.git
+        searchPaths: config_server/resources
+        username: username
+        password: password
