@@ -23,7 +23,6 @@
         <module>../eureka_server</module>
         <module>../eureka_service1</module>
         <module>../eureka_service2</module>
-        <module>../eureka_service3</module>
         <module>../feign_client</module>
         <module>../ribbon_client</module>
         <module>../config_server</module>
