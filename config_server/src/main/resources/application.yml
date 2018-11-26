@@ -1,21 +1,23 @@
-spring:
-  application:
-    name: config-server
-    #    git管理配置
-    #    spring.cloud.config.server.git.uri：配置git仓库地址
-    #    spring.cloud.config.server.git.searchPaths：配置仓库路径
-    #    spring.cloud.config.label：配置仓库的分支
-    #    spring.cloud.config.server.git.username：访问git仓库的用户名
-    #    spring.cloud.config.server.git.password：访问git仓库的用户密码
+  server:
+    port: 7001
 
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/chubenli/springCouldConfig.git/
-          searchPaths: respo
-          username: username
-          password: password
-      label: master
-server:
-  port: 7001
+
+  #git管理配置
+  #spring.cloud.config.server.git.uri：配置git仓库地址
+  #spring.cloud.config.server.git.searchPaths：配置仓库路径
+  #spring.cloud.config.label：配置仓库的分支
+  #spring.cloud.config.server.git.username：访问git仓库的用户名
+  #spring.cloud.config.server.git.password：访问git仓库的用户密码
+  spring:
+    application:
+      name: config-server
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/chubenli/springCouldConfig.git/
+            searchPaths: respo
+            username: chibun_li
+            password: LAOpozi520
+        label: master
+
