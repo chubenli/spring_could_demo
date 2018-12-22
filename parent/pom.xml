@@ -26,6 +26,7 @@
         <module>../feign_client</module>
         <module>../ribbon_client</module>
         <module>../config_server</module>
+        <module>../spring-stream</module>
     </modules>
 
     <properties>
